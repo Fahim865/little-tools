@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Tools — ফ্রি অনলাইন টুলসেট</title>
+<meta name="description" content="সাইনআপ ছাড়া, ফ্রিতে ব্যবহার করুন — ছবি, টেক্সট, ডেভেলপার ও কনভার্টার টুলস। কিছুই সার্ভারে যায় না।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="loader">
+  <div class="loader-ring"></div>
+  <p>Little Tools</p>
+</div>
+
+<!-- 3D BACKGROUND -->
+<canvas id="bg3d"></canvas>
+<div class="bg-overlay"></div>
+
+<!-- NAV -->
+<header id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">◈</span>
+      <span>Little<b>Tools</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#tools">টুলস</a>
+      <a href="#why">কেন</a>
+      <a href="#about">সম্পর্কে</a>
+    </nav>
+    <button id="themeBtn" class="theme-btn" aria-label="Theme toggle">🌙</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content reveal">
+    <div class="badge">🔒 ১০০% প্রাইভেট — ফাইল আপলোড হয় না</div>
+    <h1>
+      ছোট ছোট কাজ,<br>
+      <span class="grad">তিন সেকেন্ডে শেষ</span>
+    </h1>
+    <p class="sub">
+      ছবি কমপ্রেস, PDF মার্জ, QR বানানো, JSON ফরম্যাট, পাসওয়ার্ড তৈরি —
+      সব ফ্রি, কোনো সাইনআপ নেই, কোনো সার্ভার নেই। সব আপনার ব্রাউজারেই চলে।
+    </p>
+    <div class="hero-cta">
+      <a href="#tools" class="btn btn-primary">টুলস দেখুন <span class="arrow">→</span></a>
+      <a href="#why" class="btn btn-ghost">কীভাবে কাজ করে</a>
+    </div>
+    <div class="hero-stats">
+      <div><b id="statCount">12</b><span>টুলস</span></div>
+      <div><b>0</b><span>সাইনআপ</span></div>
+      <div><b>∞</b><span>ব্যবহার</span></div>
+    </div>
+  </div>
+
+  <div class="hero-visual reveal-delay">
+    <div class="float-card card-1">
+      <div class="fc-icon">🖼️</div>
+      <div class="fc-label">ইমেজ কমপ্রেস</div>
+      <div class="fc-bar"><i style="width:78%"></i></div>
+    </div>
+    <div class="float-card card-2">
+      <div class="fc-icon">📄</div>
+      <div class="fc-label">PDF মার্জ</div>
+      <div class="fc-bar"><i style="width:54%"></i></div>
+    </div>
+    <div class="float-card card-3">
+      <div class="fc-icon">🔐</div>
+      <div class="fc-label">পাসওয়ার্ড</div>
+      <div class="fc-bar"><i style="width:92%"></i></div>
+    </div>
+    <div class="orb"></div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="tools-section">
+  <div class="section-head reveal">
+    <span class="kicker">টুলসেট</span>
+    <h2>কাজ বেছে নিন</h2>
+    <p>যে টুল দরকার সেটায় ক্লিক করুন — সাথে সাথেই খুলে যাবে।</p>
+  </div>
+
+  <div class="tool-grid" id="toolGrid"></div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="why-section">
+  <div class="section-head reveal">
+    <span class="kicker">কেন ভিন্ন</span>
+    <h2>আপনার ফাইল আপনার কাছেই থাকে</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-num">01</div>
+      <h3>সার্ভারে যায় না</h3>
+      <p>সব প্রসেসিং আপনার ব্রাউজারেই। আপনার ছবি, ডকুমেন্ট কারো সার্ভারে আপলোড হয় না।</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-num">02</div>
+      <h3>সাইনআপ শূন্য</h3>
+      <p>ইমেইল, ফোন, অ্যাকাউন্ট — কিছুই লাগে না। খুলুন, ব্যবহার করুন, বন্ধ করুন।</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-num">03</div>
+      <h3>সত্যিই ফ্রি</h3>
+      <p>কোনো ট্রায়াল নেই, ওয়াটারমার্ক নেই, লিমিট নেই। যত খুশি ব্যবহার করুন।</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="about-inner reveal">
+    <span class="kicker">সম্পর্কে</span>
+    <h2>Little Tools</h2>
+    <p>
+      প্রতিদিনের ছোট ছোট কাজের জন্য একটা পরিষ্কার, দ্রুত টুলসেট — যেখানে কোনো
+      সাইনআপ নেই, কোনো বিজ্ঞাপনের জঙ্গল নেই। প্রতিটা টুল একটা HTML ফাইল — আপনি
+      চাইলে অফলাইনেও চালাতে পারবেন।
+    </p>
+    <div class="about-tags">
+      <span>ব্রাউজারে চলে</span>
+      <span>অফলাইন সাপোর্ট</span>
+      <span>বাংলা ইন্টারফেস</span>
+      <span>ওপেন সোর্স</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="logo">
+      <span class="logo-mark">◈</span>
+      <span>Little<b>Tools</b></span>
+    </div>
+    <p>বাংলাদেশ থেকে ভালোবাসা দিয়ে বানানো 💚</p>
+  </div>
+</footer>
+
+<!-- TOOL MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3 id="modalTitle">টুল</h3>
+      <button id="modalClose">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="three/three.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
